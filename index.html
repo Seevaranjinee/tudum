@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
-  <title>Netflix Intro Animation made using Code - by Aishwary</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <title>Tudum S Intro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/stylee.css">
 
+<!-- your Tudum S intro CSS only -->
+</head>
 <body>
 <div id="container">
   <netflixintro letter="N">
@@ -183,14 +184,13 @@
   </netflixintro>
 </div>
 
-<div class="credits">
-  <a href="https://github.com/Aishwary2004Gupta" target="_blank">Made by Aishwary Gupta</a>
-</div>
-
-<div id="credit">ta-dum</div>
-
-  
-  <script src="./script.js"></script>
-
+<audio id="tudum-audio" src="tudum.mp3" autoplay></audio>
+<script src="script.js"></script>
+<script>
+  // Redirect to main portfolio after intro (adjust duration if needed)
+  setTimeout(function(){
+    window.location.href = "index.html";
+  }, 4000); // Change 4000 to match your intro duration (ms)
+</script>
 </body>
 </html>
