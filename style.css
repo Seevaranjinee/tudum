@@ -49,37 +49,50 @@ body {
 
 /* --- LETTER 'Z' SHAPE DEFINITIONS --- */
 #container netflixintro[letter=Z] {
-    transform-origin: 50% 50%; 
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  animation-name: zoom-in;
+  animation-delay: 0.5s;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
 }
 
-/* 1. TOP HORIZONTAL STROKE (Helper 1) */
+/* Top bar */
 #container netflixintro[letter=Z] .helper-1 {
-    width: 90%;             /* Width across the logo box */
-    height: 10%;            /* Thickness of the line */
-    left: 5%;               /* Centered horizontally */
-    top: 10%;               /* Positioned near the top */
-    transform: rotate(0deg); /* Straight horizontal */
-    overflow: hidden;
+  position: absolute;
+  width: 70%;
+  height: 19%;
+  left: 15%;
+  top: 8%;
+  border-radius: 10% 15% 10% 10%/30% 40% 18% 10%;
+  overflow: hidden;
+  transform: rotate(0deg);
 }
 
-/* 2. DIAGONAL STROKE (Helper 2) */
+/* Diagonal */
 #container netflixintro[letter=Z] .helper-2 {
-    width: 120%;            
-    height: 10%;            
-    left: -10%;             
-    top: 50%;               
-    transform: rotate(-35deg); /* Diagonal slant */
-    overflow: hidden;
+  position: absolute;
+  width: 62%;
+  height: 13%;
+  left: 20%;
+  top: 44%;
+  overflow: hidden;
+  border-radius: 10% 80% 20% 10%/35% 10% 32% 30%;
+  transform: rotate(-24deg) skew(-8deg, 0deg);
 }
 
-/* 3. BOTTOM HORIZONTAL STROKE (Helper 3) */
+/* Bottom bar */
 #container netflixintro[letter=Z] .helper-3 {
-    width: 90%;             
-    height: 10%;            
-    left: 5%;               
-    top: 80%;               
-    transform: rotate(0deg); /* Straight horizontal */
-    overflow: hidden;
+  position: absolute;
+  width: 70%;
+  height: 19%;
+  left: 15%;
+  top: 73%;
+  border-radius: 12% 12% 16% 18%/30% 40% 15% 13%;
+  overflow: hidden;
+  transform: rotate(0deg);
 }
 
 /* --- BRUSH STROKE EFFECTS --- */
