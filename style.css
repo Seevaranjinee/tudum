@@ -32,36 +32,40 @@ body {
 }
 
 /* --- LETTER 'Z' SHAPE DEFINITIONS --- */
-#container netflixintro[letter=Z] .helper-1 {
+/* --- LETTER 'S' SHAPE DEFINITIONS --- */
+#container netflixintro[letter=S] .helper-1 {
   position: absolute;
-  width: 70%;
-  height: 19%;
-  left: 15%;
-  top: 8%;
-  border-radius: 10% 15% 10% 10%/30% 40% 18% 10%;
-  overflow: hidden;
-  transform: rotate(0deg);
-}
-#container netflixintro[letter=Z] .helper-2 {
-  position: absolute;
-  width: 62%;
-  height: 13%;
+  width: 55%;
+  height: 45%;
   left: 20%;
-  top: 44%;
+  top: 0%;
+  border-radius: 100% 100% 50% 50%/60% 60% 40% 40%;
   overflow: hidden;
-  border-radius: 10% 80% 20% 10%/35% 10% 32% 30%;
-  transform: rotate(-24deg) skew(-8deg, 0deg);
+  transform: rotate(8deg) scaleY(1.05);
 }
-#container netflixintro[letter=Z] .helper-3 {
+
+#container netflixintro[letter=S] .helper-2 {
   position: absolute;
-  width: 70%;
-  height: 19%;
+  width: 65%;
+  height: 20%;
   left: 15%;
-  top: 73%;
-  border-radius: 12% 12% 16% 18%/30% 40% 15% 13%;
+  top: 40%;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   overflow: hidden;
-  transform: rotate(0deg);
+  transform: rotate(-5deg);
 }
+
+#container netflixintro[letter=S] .helper-3 {
+  position: absolute;
+  width: 55%;
+  height: 45%;
+  left: 20%;
+  top: 55%;
+  border-radius: 50% 50% 100% 100%/40% 40% 60% 60%;
+  overflow: hidden;
+  transform: rotate(-8deg) scaleY(1.05);
+}
+
 
 /* --- BRUSH STROKE EFFECTS --- */
 #container netflixintro [class*=helper-] .effect-brush {
