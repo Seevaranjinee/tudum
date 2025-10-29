@@ -824,10 +824,10 @@ body {
 
 @keyframes zoom-in {
   0% {
-    transform: scale(1);
+    transform: scale(15);
   }
   100% {
-    transform: scale(15);
+    transform: scale(1);
   }
 }
 
